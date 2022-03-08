@@ -39,7 +39,7 @@ Any other version is not guaranteed to work.
 Require the package
 
 ```
-composer require vizir/laravel-keycloak-web-guard2
+composer require azco/laravel-keycloak-web-guard2
 ```
 
 If you want to change routes or the default values for Keycloak, publish the config file:
