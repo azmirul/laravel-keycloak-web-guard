@@ -79,6 +79,10 @@ class AuthController extends Controller
 
             if (Auth::validate($token)) {
                 $url = config('keycloak-web.redirect_url', '/admin');
+                if(session()->has('url.intended')) {
+                    $intended = str_replace(\Request::root() .'/', config('app.url'), session('url.intended'));
+                    session()->put('url.intended', $intended);
+                }
                 return redirect()->intended($url);
             }
         }

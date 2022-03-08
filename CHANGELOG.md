@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+### [2.4.0] - 2022-03-08
+
+* Support laravel 9
+
 ### [2.3.2] - 2020-01-27
 
 * Support to Guzzle 7
@@ -64,4 +68,3 @@ So, here is a lot of changes to make the plugin stable.
 ### [1.0.0] - 2019-06-05
 
 It's alive!
-

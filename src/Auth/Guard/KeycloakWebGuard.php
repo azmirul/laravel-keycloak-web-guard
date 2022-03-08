@@ -141,7 +141,7 @@ class KeycloakWebGuard implements Guard
 
         return true;
     }
-    
+
     /**
      * Check user is authenticated and return his resource roles
      *
@@ -186,5 +186,11 @@ class KeycloakWebGuard implements Guard
     public function hasRole($roles, $resource = '')
     {
         return empty(array_diff((array) $roles, $this->roles($resource)));
+    }
+
+
+    public function hasUser()
+    {
+        return ! is_null($this->user);
     }
 }
